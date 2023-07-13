@@ -5,7 +5,7 @@ export default function Hero(){
     return(
         <div className='silx-hero'>
             <div className='silx-hero-header'>
-                <h3 className='silx-hero-album'><span>Lorem</span> - ipsum dolor sit amet consectetur.</h3>
+                <div className='silx-hero-album'><span>Lorem</span> - ipsum dolor sit amet consectetur.</div>
                 <img className='silx-hero-cover' src={Music} alt="music cover" />
             </div>
             <div className="silx-hero-content">
