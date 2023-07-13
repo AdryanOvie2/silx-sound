@@ -1,0 +1,16 @@
+.silx-hero{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../src/assets/spotify.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.silx-hero-title{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
