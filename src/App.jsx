@@ -6,6 +6,7 @@ import SocialMedia from './components/socialMedia'
 import StreamChannel from './components/streamChannel'
 import TrackList from './components/trackList'
 import Info from './components/info'
+import Footer from './components/footer'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <StreamChannel/>
         <TrackList/>
         <Info/>
+        <Footer/>
       </section>
     </>
   )
