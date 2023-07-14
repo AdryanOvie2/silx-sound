@@ -1,5 +1,5 @@
 .socialMedia{
-    position: absolute;
+    position: fixed;
     right: 5rem;
     top: 6rem;
 }
