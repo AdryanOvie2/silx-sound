@@ -4,7 +4,8 @@ footer{
 }
     .footer-header{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        /* justify-content: space-between; */
     }
         .footer-all-rights{
             font-family: system-ui, -apple-system;
@@ -28,3 +29,10 @@ footer{
             font-style: italic;
             font-family: system-ui, -apple-system;
         }
+
+@media (width >= 600px){
+    .footer-header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
