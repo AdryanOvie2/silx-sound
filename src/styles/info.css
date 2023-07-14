@@ -1,13 +1,17 @@
 
 .info-divider{
-    margin: 3rem 0;
+    margin: 3rem 1rem;
 }
 .info-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 1rem;
-    grid-template-areas: "site legal news";
+    grid-gap: 2rem;
+    grid-template-areas: "site"
+                         "legal"
+                         "news";
+    padding: 0 1rem;
+    text-align: center;
 }
     .info-site{
         color: var(--color-white);
@@ -24,6 +28,8 @@
         letter-spacing: .1rem;
     }
     .info-newsletter{
+        width: 70%;
+        margin: auto;
         grid-area: news;
         display: flex;
         flex-direction: column;
@@ -69,3 +75,15 @@
                 background: transparent;
                 border: transparent;
             }
+
+@media (width >= 800px){
+    .info-content{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+        grid-template-areas: "site legal news";
+        text-align: left;
+    }
+    .info-newsletter{
+        width: 100%;
+    }
+}
