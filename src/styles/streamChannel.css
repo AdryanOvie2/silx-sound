@@ -1,15 +1,20 @@
 .stream{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }   
     .stream-title{
         font-size: 3rem;
+        text-align: center;
         letter-spacing: .1rem;
         text-transform: uppercase;
     }
     .stream-table{
-        display: flex;    
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        padding: 0 1rem; 
     }
         .stream-table li{
             display: flex;
@@ -25,3 +30,21 @@
             .stream-table li a:hover{
                 color: var(--color-green);
             }
+@media (width >= 800px){
+    .stream{
+        padding-left: 1rem;
+    }
+    .stream-table{
+        flex-direction: row;
+        justify-content: center;  
+    }
+}
+
+@media (width >= 1000px){
+    .stream{
+        align-items: flex-start;
+    }
+    .stream-table{
+        justify-content: flex-start;
+    }
+}
