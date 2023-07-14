@@ -5,6 +5,7 @@ import Header from './components/header'
 import SocialMedia from './components/socialMedia'
 import StreamChannel from './components/streamChannel'
 import TrackList from './components/trackList'
+import Info from './components/info'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Hero/>
         <StreamChannel/>
         <TrackList/>
+        <Info/>
       </section>
     </>
   )

@@ -1,0 +1,71 @@
+
+.info-divider{
+    margin: 3rem 0;
+}
+.info-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: "site legal news";
+}
+    .info-site{
+        color: var(--color-white);
+        text-transform: uppercase;
+        grid-area: site;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+    .info-legal{
+        color: var(--color-white);
+        text-transform: uppercase;
+        grid-area: legal;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+    }
+    .info-newsletter{
+        grid-area: news;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }   .info-newsletter h3{
+            color: var(--color-green);
+            font-size: 1.5rem;
+            font-family: system-ui, -apple-system;
+            text-transform: uppercase;
+        }
+        .info-newsletter p{
+            font-size: 1.1rem;
+            letter-spacing: .1rem;
+            font-family: system-ui, -apple-system;
+            font-style: italic;
+        }
+        .info-newsletter-form{
+            display: flex;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-gray);
+        }
+            .info-newsletter form input{
+                width: 100%;
+                outline: none;
+                background: none;
+                border: none;
+                padding: 1rem 1rem 1rem 0;
+                letter-spacing: .1rem;
+                font-size: 1.2rem;
+            }
+            .info-newsletter form button{
+                font-weight: 400;
+                position: relative;
+                cursor: pointer;
+                white-space: nowrap;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                text-decoration: none;
+                padding: 0.6rem 1.5rem 0.5rem;
+                background: transparent;
+                border: transparent;
+            }
