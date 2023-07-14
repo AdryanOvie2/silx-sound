@@ -1,5 +1,54 @@
-.trackList-title{
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
+.trackList{
+    margin-top: 4rem;
 }
+    .trackList-title{
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    .trackList-songs{
+        margin: 5rem 0;
+    }
+    /* .trackList-itemSong{
+        margin: 5rem 0;
+        display: flex;
+    }
+        .tranList-song-number, .tranList-song-duration, .trackList-itemSong box-icon{
+            flex-grow: 1;
+        }
+        .tranList-song-content{
+            flex-grow: 15;
+        } */
+    .trackList-itemSong{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'id play content duration share';
+        align-items: center;
+    }
+        .tranList-song-number{
+            grid-area: id;
+            font-family: system-ui, -apple-system;
+            font-size: 1.5rem;
+        }
+        .trackList-itemSong box-icon:first-child{
+            grid-area: play;
+        }
+        .tranList-song-content{
+            grid-area: content;
+        }   
+            .tranList-song{
+                font-size: 1.5rem;
+                font-family: system-ui, -apple-system;
+            }
+            .tranList-song-artist{
+                font-family: system-ui, -apple-system;
+            }
+        .tranList-song-duration{
+            grid-area: duration;
+            font-family: system-ui, -apple-system;
+        }
+        .trackList-itemSong box-icon:last-child{
+            grid-area: share;
+        }
