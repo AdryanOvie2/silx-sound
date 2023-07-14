@@ -5,7 +5,7 @@
   --color-black: #000000;
   --color-green: #50A584;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Monument, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -40,4 +40,8 @@ a {
 }
 a:hover {
   color: var(--color-blue);
+}
+
+li{
+  list-style: none;
 }

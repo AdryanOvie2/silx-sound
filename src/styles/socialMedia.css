@@ -1,0 +1,11 @@
+.socialMedia{
+    position: absolute;
+    right: 5rem;
+    top: 6rem;
+}
+.socialMedia li{
+    padding: .5rem 0;
+}
+.socialMedia li a box-icon:hover{
+    fill: var(--color-green);
+}
