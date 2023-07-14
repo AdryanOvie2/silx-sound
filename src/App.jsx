@@ -3,6 +3,7 @@ import BackgroundPage from './components/backgroundPage'
 import Hero from './components/hero'
 import Header from './components/header'
 import SocialMedia from './components/socialMedia'
+import StreamChannel from './components/streamChannel'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <section className="main">
         <Hero/>
+        <StreamChannel/>
       </section>
     </>
   )
