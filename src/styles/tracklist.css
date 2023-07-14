@@ -1,28 +1,21 @@
 .trackList{
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 4rem;
 }
     .trackList-title{
         font-size: 3rem;
         text-transform: uppercase;
         letter-spacing: .1rem;
+        text-align: center;
     }
     .trackList-songs{
         margin: 5rem 0;
     }
-    /* .trackList-itemSong{
-        margin: 5rem 0;
-        display: flex;
-    }
-        .tranList-song-number, .tranList-song-duration, .trackList-itemSong box-icon{
-            flex-grow: 1;
-        }
-        .tranList-song-content{
-            flex-grow: 15;
-        } */
     .trackList-itemSong{
         margin: 2rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 'id play content duration share';
         align-items: center;
@@ -52,3 +45,11 @@
         .trackList-itemSong box-icon:last-child{
             grid-area: share;
         }
+@media (width >= 1000px){
+    .trackList-itemSong{
+        grid-template-columns: 1fr 1fr 10fr 1fr 1fr;
+    }
+    .trackList-title{
+        text-align: left;
+    }
+}
