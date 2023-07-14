@@ -1,0 +1,26 @@
+.stream{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}   
+    .stream-title{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    .stream-table{
+        display: flex;    
+    }
+        .stream-table li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid var(--color-white);
+        }
+            .stream-table li a{
+                display: flex;
+                gap: .5rem
+            }
+            .stream-table li a:hover{
+                color: var(--color-green);
+            }
