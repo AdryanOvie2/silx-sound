@@ -1,4 +1,5 @@
 .socialMedia{
+    display: none;
     position: fixed;
     right: 5rem;
     top: 6rem;
@@ -8,4 +9,10 @@
 }
 .socialMedia li a box-icon:hover{
     fill: var(--color-green);
+}
+
+@media (width >= 1300px){
+    .socialMedia{
+        display: block;
+    }
 }
