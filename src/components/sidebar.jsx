@@ -17,18 +17,18 @@ export default function Sidebar(){
             </div>
             
             <ul className="sidebar-content">
-            <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Client</a></li>
-                <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Client</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Client</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Gold</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">PLayer</a></li>
+                <li><a href="#">Shop</a></li>
             </ul>
             <ul className='sidebar-media'>
                 <SocialMedia/>
