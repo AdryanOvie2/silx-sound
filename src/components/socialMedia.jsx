@@ -20,8 +20,8 @@ export default function SocialMedia(){
             </li>
         );
     return(
-        <ul className="socialMedia">
+        <>
             {linkMenu}
-        </ul>
+        </>
     )
 }
