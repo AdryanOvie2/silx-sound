@@ -4,14 +4,38 @@ header{
     top: 0;
     left: 0;
     z-index: 5;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: saturate(180%) blur(5px);
+    background: hsla(0, 0%, 0%, 0.395);
+}
+.header-menu{
+    display: none;
+}
+
+@media (600px <= width <= 1000px ){
+    .header-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 
 @media (width >= 1000px){
     header{
         padding: 2rem 5rem;
+    }
+    .header-menu{
+        display: none;
+    }
+}
+
+@media (width >= 1200px){
+    header{
+        backdrop-filter: none;
+        background: none;
     }
 }
