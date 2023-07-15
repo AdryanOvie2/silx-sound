@@ -1,4 +1,5 @@
 import './App.css'
+import './styles/socialMedia.css'
 import BackgroundPage from './components/backgroundPage'
 import Hero from './components/hero'
 import Header from './components/header'
@@ -13,7 +14,9 @@ function App() {
   return (
     <>
       <BackgroundPage/>
-      <SocialMedia/>
+      <ul className="socialMedia">
+        <SocialMedia/>    
+      </ul>
       <Header/>
       <section className="main">
         <Hero/>
