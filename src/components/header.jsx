@@ -6,7 +6,6 @@ import SocialMedia from './socialMedia'
 export default function Header(){
     function handleClick() {
         const sidebar = document.getElementById("sidebar");
-        // sidebar.style.width = "27vw";
         sidebar.classList.toggle('open');
       }
     return(
