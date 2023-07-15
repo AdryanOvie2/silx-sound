@@ -15,6 +15,7 @@ const footerMedia = [
 ];
 
 export default function Footer(){
+    const author = '<AdryCode/>'
     const footerItem = footerMedia.map(enlace => 
         <li key={enlace.id}>
             <a href={enlace.href}>
@@ -38,6 +39,7 @@ export default function Footer(){
                 <p>
                 We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on which our LA team live and work.
                 </p>
+            <p>{author}</p>
             </div>
         </footer>
     )
