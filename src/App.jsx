@@ -1,6 +1,7 @@
 import './App.css'
 import './styles/socialMedia.css'
 import BackgroundPage from './components/backgroundPage'
+import Sidebar from './components/sidebar'
 import Hero from './components/hero'
 import Header from './components/header'
 import SocialMedia from './components/socialMedia'
@@ -17,6 +18,7 @@ function App() {
       <ul className="socialMedia">
         <SocialMedia/>    
       </ul>
+      <Sidebar/>
       <Header/>
       <section className="main">
         <Hero/>

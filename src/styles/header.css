@@ -11,6 +11,9 @@ header{
     backdrop-filter: saturate(180%) blur(5px);
     background: hsla(0, 0%, 0%, 0.395);
 }
+header svg{
+    cursor: pointer;
+}
 .header-menu{
     display: none;
 }

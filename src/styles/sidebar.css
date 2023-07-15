@@ -1,0 +1,81 @@
+.sidebar{
+    width: 0;/* propieda que se modificará con JS  */
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    background-color: var(--color-green);
+    overflow-x: hidden;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  
+    .sidebar-header{
+        padding: 1.3rem 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sidebar-content{
+        margin: 0 auto;
+        width: 90%;
+        height: 70vh;
+        overflow-y: scroll;
+    }
+        .sidebar-content li{
+            margin: 1rem 0;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+    .sidebar-media{
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* .sidebar-content{
+        text-align: center;
+        font-size: 2rem;
+        color: rgb(222, 222, 222);
+        width: 100%;
+    }   .sidebar-content a{
+            display: block;
+            transition: .3s;
+    }   .sidebar-content a:hover, .sidebar-content a:focus{
+            color: white;
+        }   .sidebar-content li{
+            padding-top: .8rem;
+        } */
+    .sidebarClose{
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-family: system-ui, -apple-system;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    .sidebarClose:hover, .sidebar a:hover{
+        color: var(--color-black);
+    }
+.open{
+    width: 100vw;
+    transition: .3s;
+}
+@media (width >= 600px){
+    .open{
+        width: 60vw;
+    }
+}
+@media (width >= 800px){
+    .open{
+        width: 40vw;
+    }
+}
+@media (width >= 1000px){
+    .open{
+        width: 27vw;
+    }
+}
+
