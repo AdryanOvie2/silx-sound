@@ -15,11 +15,11 @@ export default function Hero(){
 
                 <div className="silx-buttons">
                     <a href="#">
-                        <box-icon size='md' color='white' name='play'></box-icon>
+                        <box-icon size='md' color='white' name='play' animation='tada-hover'/>
                         Listen Now
                     </a>
                     <a href="#">
-                        <box-icon size='sm' name='share-alt' type='solid' color='#ffffff' ></box-icon>
+                        <box-icon size='sm' name='share-alt' type='solid' color='white' animation='tada-hover' />
                         Share
                     </a>
                 </div>
