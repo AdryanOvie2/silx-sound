@@ -9,12 +9,15 @@ footer{
         align-items: center;
     }
         .footer-all-rights{
+            text-align: center;
             font-family: system-ui, -apple-system;
             font-size: 1.3rem;
             font-style: italic;
         }
     .footer-socialMedia{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1rem;
     }
     .footer-content{
