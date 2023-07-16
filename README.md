@@ -1,4 +1,4 @@
-# bonsai-react
+# Silx-Sund
 
 Este proyecto ha sido replicado con intenciones educativas
 
